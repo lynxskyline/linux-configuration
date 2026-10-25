@@ -1,0 +1,6 @@
+{
+    "inlayHint.enable": false,
+    "json.schemaDownload.trustedDomains": {
+      "https://github.com": true
+    }
+}

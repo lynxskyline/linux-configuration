@@ -1,5 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
-let g:netrw_dirhist_3='/home/kiwann/.vim/autoload'
-let g:netrw_dirhist_2='/home/kiwann/.vim'
-let g:netrw_dirhist_1='/home/kiwann/.config/i3'
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/kiwann/school archive/android studio/testing/lib'
+let g:netrw_dirhist_3='/home/kiwann/.config/fastfetch'
+let g:netrw_dirhist_2='/home/kiwann/.vim/plugged/vim-airline-themes/autoload/airline/themes'
+let g:netrw_dirhist_1='/home/kiwann/.vim/plugged/vim-airline-themes/autoload/airline'
+let g:netrw_dirhist_0='/home/kiwann/.vim/plugged/vim-airline-themes/autoload'
+let g:netrw_dirhist_9='/home/kiwann/.vim/plugged/vim-airline-themes'
+let g:netrw_dirhist_8='/home/kiwann/.vim/plugged'
+let g:netrw_dirhist_7='/home/kiwann/.vim'
+let g:netrw_dirhist_6='/home/kiwann/.vim/plug'
+let g:netrw_dirhist_5='/home/kiwann/.vim'

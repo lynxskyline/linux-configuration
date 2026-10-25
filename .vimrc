@@ -24,9 +24,11 @@ set smartcase
 set incsearch
 set hlsearch
 set cmdheight=1
+set updatetime=300
 
 " 2. INSERT MODE MAPPINGS
 
+let mapleader = " "
 inoremap ( ()<Left>
 inoremap [ []<Left>
 inoremap " ""<Left>
@@ -47,32 +49,31 @@ nnoremap <A-r> <C-r>
 
 if filereadable(expand("~/.vimrc.plug"))
     source ~/.vimrc.plug
+    source ~/.vim/fzf.vim
 endif
 
 let g:airline_extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme='onedark'
+let g:lsp_inlay_hints_enabled = 1
+let g:coc_inlay_hints = 0
+autocmd VimEnter * silent! call CocAction('disableInlayHints')
 colorscheme onedark
 
 " 5. HIGHLIGHT
 highlight CocErrorSign ctermfg=Red guifg=#ff0000
 highlight CocWarningSign ctermfg=Brown guifg=#ffaa00
 
-" PENGATURAN TOMBOL UNTUK AUTOCOMPLETE & SNIPPET (Mencegah Tabrakan)
-
 let g:UltiSnipsExpandTrigger="<Nop>"
 
-" Geser ke placeholder snippet berikutnya/sebelumnya tetap menggunakan Tab setelah kode masuk
 let g:coc_snippet_next = '<TAB>'
 let g:coc_snippet_prev = '<S-TAB>'
 
-" Perbaikan: TAB sekarang digunakan untuk KONFIRMASI (memasukkan saran teks) jika menu muncul
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#pum#confirm() :
       \ CheckBackspace() ? "\<Tab>" :
       \ coc#refresh()
 
-" Pengaturan Arrow (Panah): Menggunakan panah atas dan bawah untuk navigasi menu pop-up
 inoremap <silent><expr> <Down> coc#pum#visible() ? coc#pum#next(1) : "\<Down>"
 inoremap <silent><expr> <Up>   coc#pum#visible() ? coc#pum#prev(1) : "\<Up>"
 
@@ -81,8 +82,16 @@ function! CheckBackspace() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" Membuat menu pop-up autocomplete menjadi abu-abu gelap estetik
 highlight CocPumMenu ctermbg=235 guibg=#2c313c
-" Membuat teks yang sedang disorot/dipilih menjadi biru khas VS Code
 highlight CocPumSearch ctermfg=4 guifg=#61afef
 
+augroup VimrcTerminalPos
+    autocmd!
+    autocmd TerminalOpen * wincmd L
+augroup END
+
+" Kursor garis tipis saat Insert Mode
+let &t_SI = "\<Esc>[5 q"
+
+" Kursor blok saat Normal Mode
+let &t_EI = "\<Esc>[2 q"
