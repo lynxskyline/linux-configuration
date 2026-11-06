@@ -8,23 +8,17 @@ published by the Free Software Foundation, either version 3 of the
 License, or (at your option) any later version.
 
 ### for more information
-(devilspie2)
-1. <https://github.com/dsalt/devilspie2.git>.
 
-(i3wm)
-2. <https://i3wm.org/>.
+1. <https://github.com/dsalt/devilspie2.git> (devilspie2)
 
-(kitty terminal)
-3. <https://sw.kovidgoyal.net/kitty/>
+2. <https://i3wm.org/> (i3wm)
 
-(neovim)
-4. <https://neovim.io/>
+3. <https://sw.kovidgoyal.net/kitty/> (kitty terminal)
 
-(picom compositor)
-5. <https://github.com/yshui/picom.git>
+4. <https://neovim.io/> (neovim)
 
-(polybar)
-6. <https://github.com/polybar/polybar.git>
+5. <https://github.com/yshui/picom.git> (picom compositor)
 
-(rofi)
-7. <https://github.com/davatorium/rofi>
+6. <https://github.com/polybar/polybar.git> (polybar)
+
+7. <https://github.com/davatorium/rofi> (rofi)
