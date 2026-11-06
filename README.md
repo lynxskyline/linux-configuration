@@ -1,5 +1,6 @@
+
 # this is my configuration about linux costumization
-Copyright © 2026 Ishikii.
+## Copyright © 2026 Ishikii.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
