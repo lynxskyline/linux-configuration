@@ -1,5 +1,6 @@
 
 # This is my configuration about linux costumization
+
 ## Copyright © 2026 Ishikii.
 
 This program is free software: you can redistribute it and/or modify
@@ -9,16 +10,16 @@ License, or (at your option) any later version.
 
 ### for more information
 
-1. <https://github.com/dsalt/devilspie2.git> (devilspie2)
+* [devilspie2](https://github.com/dsalt/devilspie2.git)
 
-2. <https://i3wm.org/> (i3wm)
+* [i3wm](https://i3wm.org/)
 
-3. <https://sw.kovidgoyal.net/kitty/> (kitty terminal)
+* [kitty terminal](https://sw.kovidgoyal.net/kitty/)
 
-4. <https://neovim.io/> (neovim)
+* [neovim](https://neovim.io/>)
 
-5. <https://github.com/yshui/picom.git> (picom compositor)
+* [picom compositor](https://github.com/yshui/picom.git)
 
-6. <https://github.com/polybar/polybar.git> (polybar)
+* [polybar](https://github.com/polybar/polybar.git)
 
-7. <https://github.com/davatorium/rofi> (rofi)
+* [rofi](https://github.com/davatorium/rofi)
