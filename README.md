@@ -9,10 +9,10 @@ License, or (at your option) any later version.
 
 ### for more information
 (devilspie2)
-1. <https://github.com/dsalt/devilspie2.git>
+1. <https://github.com/dsalt/devilspie2.git>.
 
 (i3wm)
-2. <https://i3wm.org/>
+2. <https://i3wm.org/>.
 
 (kitty terminal)
 3. <https://sw.kovidgoyal.net/kitty/>
